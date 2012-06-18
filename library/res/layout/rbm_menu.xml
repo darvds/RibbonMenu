@@ -7,22 +7,22 @@
     
     <ListView 
         android:id="@+id/rbm_listview"
-        android:layout_width="200dp"
+        android:layout_width="@dimen/rbm_menu_width"
         android:layout_height="match_parent" 
-        android:background="#303030"   
-        android:visibility="gone">
-                   <!-- android:background="#303030"  #efefef -->
+        android:background="@color/rbm_menu_background"   
+        android:visibility="gone"
+        android:cacheColorHint="#00000000">
     </ListView>    
-     
     
+    <!-- simple drop shadow -->
     <View 
         android:id="@+id/rbm_outside_view"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent"        
         android:layout_weight="1"
         android:clickable="true"
-        android:visibility="gone"/>
-    
+        android:visibility="gone"
+        />
     
     
 

@@ -103,7 +103,7 @@ public class RibbonMenuView extends LinearLayout {
 			}
 			
 		});
-		
+			
 		
 	}
 	
@@ -128,8 +128,8 @@ public class RibbonMenuView extends LinearLayout {
 	}
 	
 	
-	public void setBackgroundColor(int color){
-		rbmListView.setBackgroundResource(color);
+	public void setBackgroundResource(int resource){
+		rbmListView.setBackgroundResource(resource);
 		
 	}
 	
@@ -140,7 +140,7 @@ public class RibbonMenuView extends LinearLayout {
 		rbmOutsideView.setVisibility(View.VISIBLE);	
 				
 		rbmListView.setVisibility(View.VISIBLE);	
-		rbmListView.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.in_from_left));
+		rbmListView.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rbm_in_from_left));
 		
 	}
 	
@@ -150,7 +150,7 @@ public class RibbonMenuView extends LinearLayout {
 		rbmOutsideView.setVisibility(View.GONE);
 		rbmListView.setVisibility(View.GONE);	
 		
-		rbmListView.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.out_to_left));
+		rbmListView.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rbm_out_to_left));
 		
 	}
 	
@@ -215,9 +215,6 @@ public class RibbonMenuView extends LinearLayout {
 		} catch(Exception e){
 			e.printStackTrace();
 		}
-		
-		
-		Log.v("menu", "menu added");
 		
 	}
 	

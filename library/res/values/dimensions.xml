@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="rbm_menu_width">200dp</dimen>
+  
+    <dimen name="rbm_item_padding_topbottom">16dp</dimen>
+    <dimen name="rbm_item_padding_leftright">8dp</dimen>
+    
+    <dimen name="rbm_item_image_height">24dp</dimen>
+    <dimen name="rbm_item_image_width">24dp</dimen>
+    
+    <dimen name="rbm_item_text_size">16sp</dimen>
+    <dimen name="rbm_item_text_padding_left">10dp</dimen>
+    
+</resources>
