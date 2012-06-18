@@ -3,7 +3,7 @@ RibbonMenu
 
 Navigation menu for Android (based on Google+ app).
 
-[![RibbonMenu](https://github.com/darvds/RibbonMenu/blob/master/rbm1.png)]
+![RibbonMenu](https://github.com/darvds/RibbonMenu/raw/master/rbm1.png)
 
 
 Usage
