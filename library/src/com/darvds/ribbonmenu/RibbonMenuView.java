@@ -7,8 +7,9 @@ import org.xmlpull.v1.XmlPullParser;
 
 import android.content.Context;
 import android.content.res.XmlResourceParser;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.darvds.ribbonmenu.R;
+
+import com.darvds.ribbonmenu.RibbonMenuView.SavedState;
 
 public class RibbonMenuView extends LinearLayout {
 
@@ -237,8 +239,65 @@ public class RibbonMenuView extends LinearLayout {
 	}
 	
 	
+	private boolean isMenuVisible(){		
+		return rbmOutsideView.getVisibility() == View.VISIBLE;		
+	}
+	
+		
 	
 	
+	@Override 
+	protected void onRestoreInstanceState(Parcelable state)	{
+	    SavedState ss = (SavedState)state;
+	    super.onRestoreInstanceState(ss.getSuperState());
+
+	    if (ss.bShowMenu)
+	        showMenu();
+	    else
+	        hideMenu();
+	}
+	
+	
+
+	@Override 
+	protected Parcelable onSaveInstanceState()	{
+	    Parcelable superState = super.onSaveInstanceState();
+	    SavedState ss = new SavedState(superState);
+
+	    ss.bShowMenu = isMenuVisible();
+
+	    return ss;
+	}
+
+	static class SavedState extends BaseSavedState {
+	    boolean bShowMenu;
+
+	    SavedState(Parcelable superState) {
+	        super(superState);
+	    }
+
+	    private SavedState(Parcel in) {
+	        super(in);
+	        bShowMenu = (in.readInt() == 1);
+	    }
+
+	    @Override
+	    public void writeToParcel(Parcel out, int flags) {
+	        super.writeToParcel(out, flags);
+	        out.writeInt(bShowMenu ? 1 : 0);
+	    }
+
+	    public static final Parcelable.Creator<SavedState> CREATOR
+	            = new Parcelable.Creator<SavedState>() {
+	        public SavedState createFromParcel(Parcel in) {
+	            return new SavedState(in);
+	        }
+
+	        public SavedState[] newArray(int size) {
+	            return new SavedState[size];
+	        }
+	    };
+	}
 	
 	
 	
