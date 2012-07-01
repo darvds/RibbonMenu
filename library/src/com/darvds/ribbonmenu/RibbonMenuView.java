@@ -239,7 +239,7 @@ public class RibbonMenuView extends LinearLayout {
 	}
 	
 	
-	private boolean isMenuVisible(){		
+	public boolean isMenuVisible(){		
 		return rbmOutsideView.getVisibility() == View.VISIBLE;		
 	}
 	
