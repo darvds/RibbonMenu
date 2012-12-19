@@ -8,9 +8,9 @@ Original:
 ![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
 
 New:
-![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
-![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
-![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
+
+![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/new1.png)
+![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/new2.png)
 
 
 What's New
