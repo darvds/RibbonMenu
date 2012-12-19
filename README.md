@@ -23,13 +23,14 @@ What's the Purpose
 What's New
 =====
 
+- Removed the 'library' project and condensed the project to one class
 - Changed the sliding animation to match Facebook and Google+ apps
 - Added standard ActionBar (you can chose to use ActionBarSherlock)
  - Used menuitem to open the Menu
 - Added ability to update ListView on main Activity
 - Added 2 ListViews to the Menu, similiar to Facebook and Google+ apps
 - Added a AutoCompleteTextView and a Button as well to show examples of implemenation
-- Added method to allow users to hit the 'back button' to hide the menu when it is open
+- Added ability to allow users to hit the 'back button' to hide the menu when it is open
 - Allows users to interact with background(main ListView) and the menu at the same time unlike the Facebook and Google+ apps
 
 What's in the Future
