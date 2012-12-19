@@ -1,36 +1,30 @@
-RibbonMenu
+New Ribbon Menu
 ==========
 
 Navigation menu for Android (based on Google+ app).
 
-![RibbonMenu](https://github.com/darvds/RibbonMenu/raw/master/rbm1.png)
+Original:
+
+![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
+
+New:
+![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
+![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
+![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
 
 
-Usage
+What's New
 =====
 
-Menus are created in xml as normal, adding text and an icon.
+- Changed the sliding animation to match Facebook and Google+
+- Added standard ActionBar (you can chose to use ActionBarSherlock)
+ - Used menuitem to open the Menu
+- Added ability to update ListView on main Activity
+- Added 2 ListViews to the Menu, similiar to Facebook and Google+
+- Added a AutoCompleteTextView and a Button as well to show examples of implemenation
 
-In the layout you want to show the menu, add a FrameLayout as the root layout and add the RibbonMenuView set with width and height to match_parent.
 
-In your class you need to implement the iRibbonMenuCallback interface. This is called when you click a menu item and it passes the menu item id from the xml. You then make a reference to the RibbonMenuView and set the callback, set the menu items and add toggleMenu() to your android.R.id.home in your onOptionsItemSelected
+What it Needs
+====
 
-The sample activity shows how it should all work.
-
-
-License
-=======
-
-Copyright 2012 David Scott
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+- Swiping to open and close

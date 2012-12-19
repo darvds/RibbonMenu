@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/share"
+        android:showAsAction="always|withText"
+        android:title="Share"/>
+    <item
+        android:id="@+id/test"
+        android:showAsAction="always|withText"
+        android:title="Menu"/>
+    <item
+        android:id="@+id/feedback"
+        android:showAsAction="never|withText"
+        android:title="Feedback"/>
+    <item
+        android:id="@+id/about"
+        android:showAsAction="never|withText"
+        android:title="About"/>
+
+</menu>

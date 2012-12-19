@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_action_share"
+        android:showAsAction="always|withText"
+        android:title="Share"/>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always|withText"
+        android:title="Refresh"/>
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_action_user"
+        android:showAsAction="never|withText"
+        android:title="Feedback"/>
+    <item
+        android:id="@+id/donate"
+        android:icon="@drawable/rating_good"
+        android:showAsAction="never|withText"
+        android:title="Remove Ads"/>
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/action_about"
+        android:showAsAction="never|withText"
+        android:title="About"/>
+
+</menu>
