@@ -13,7 +13,7 @@
         android:layout_height="@dimen/rbm_item_image_height"
         android:layout_width="@dimen/rbm_item_image_width"
         android:scaleType="fitCenter"
-         />
+        android:contentDescription="@string/empty" />
     
     <TextView         
         android:id="@+id/rbm_item_text"
@@ -24,7 +24,7 @@
         android:layout_gravity="center_vertical"
         android:paddingLeft="@dimen/rbm_item_text_padding_left"
         android:singleLine="true"
-        android:ellipsize="end"/>
-    
+        android:ellipsize="end"
+        android:textIsSelectable="true"/>    
 
 </LinearLayout>
