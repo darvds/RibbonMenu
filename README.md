@@ -1,5 +1,5 @@
-New Ribbon Menu
-==========
+# New Ribbon Menu [![Build Status](https://travis-ci.org/jaredsburrows/RibbonMenu.png)](https://travis-ci.org/jaredsburrows/RibbonMenu)
+
 
 Updated navigation menu for Android.
 
