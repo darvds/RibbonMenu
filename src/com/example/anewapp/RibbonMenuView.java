@@ -2,6 +2,7 @@ package com.example.anewapp;
 
 
 import android.content.Context;
+import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,37 +13,83 @@ public class RibbonMenuView extends LinearLayout
 {
 	private LinearLayout menu;
 
+	/**
+	 * Constructor to create menu
+	 * @param context Context
+	 * @param attrs Other Attributes
+	 */
 	public RibbonMenuView(Context context, AttributeSet attrs) 
 	{
 		super(context, attrs);
-		try
-		{
-			LayoutInflater.from(getContext()).inflate(R.layout.rbm_menu, this, true);
-		} catch(Exception e) {}		
+		LayoutInflater.from(context).inflate(R.layout.rbm_menu, this, true);
 		menu = (LinearLayout) findViewById(R.id.menu);
 	}
 
+	/**
+	 * Show our Menu
+	 */
 	public void showMenu()
 	{
-		menu.setVisibility(View.VISIBLE);	
-		menu.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rbm_in_from_left));
+		if (menu != null)
+		{
+			new Handler().postDelayed(new Runnable()
+			{
+				public void run()
+				{
+					menu.setVisibility(View.VISIBLE);	
+					menu.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rbm_in_from_left));
+				}
+			}, 50);
+		}
 	}
 
+	/**
+	 * Hide our Menu
+	 */
 	public void hideMenu()
 	{
-		menu.setVisibility(View.GONE);
-		menu.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rbm_out_to_left));
+		if (menu != null)
+		{
+			new Handler().postDelayed(new Runnable()
+			{
+				public void run()
+				{
+					menu.setVisibility(View.GONE);
+					menu.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.rbm_out_to_left));
+				}
+			}, 50);
+		}
 	}
 
+	/**
+	 * Toggle the Menu open/close
+	 */
 	public void toggleMenu()
 	{
-		if (menu.getVisibility() == View.GONE)
+		if (menu != null)
 		{
-			showMenu();
-		} 
-		else 
-		{
-			hideMenu();
+			if (menu.getVisibility() == View.GONE)
+			{
+				showMenu(); 
+			} 
+			else
+			{
+				hideMenu();
+			}
 		}
+	}
+
+	/**
+	 * Check to see if the menu is visible
+	 * @return Visible
+	 */
+	public boolean isMenuShowing()
+	{
+		if (menu != null)
+		{
+			return menu.getVisibility() == View.VISIBLE;
+		}
+
+		return false;
 	}
 }

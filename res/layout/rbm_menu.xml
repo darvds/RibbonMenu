@@ -11,7 +11,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="#FFFFFF"
-        android:hint="Search"
+        android:hint="@string/menu_search"
         android:padding="10dp" />
 
     <ListView
@@ -30,7 +30,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="#FFFFFF"
-        android:text="TestButton" />
+        android:text="@string/button_test" />
 
     <ListView
         android:id="@+id/rbm_listview2"
