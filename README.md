@@ -5,22 +5,21 @@ Updated navigation menu for Android.
 
 Original:
 
-![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/rbm1.png)
+![RibbonMenu](art/rbm1.png)
 
 New:
 
-![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/new1.png)
-![RibbonMenu](https://github.com/jaredsburrows/RibbonMenu/raw/master/new2.png)
+![RibbonMenu](art/new1.png)
+![RibbonMenu](art/new2.png)
 
-What's the Purpose
+Purpose
 =====
 
 - Ease of Access: Allow easy access to a menu that slides in and out
 - Ease of Implementation: Update the same screen using minimal amount of code
-- Independency: Does not require support libraries such as ActionBarSherlock
 - Customization: Easy to change colors and menus
 
-What's New
+New
 =====
 
 - Removed the 'library' project and condensed the project to one class
@@ -33,7 +32,7 @@ What's New
 - Added ability to allow users to hit the 'back button' to hide the menu when it is open
 - Allows users to interact with background(main ListView) and the menu at the same time unlike the Facebook and Google+ apps
 
-What's in the Future
+Future
 ====
 
 - Swiping to open and close

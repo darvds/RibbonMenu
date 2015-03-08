@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/test"
         android:showAsAction="ifRoom|withText"
-        android:title="@string/menu_menu"/>
+        android:title="@string/menu_menu" />
     <item
         android:id="@+id/share"
         android:showAsAction="never|withText"
-        android:title="@string/menu_share"/>
+        android:title="@string/menu_share" />
     <item
         android:id="@+id/feedback"
         android:showAsAction="never|withText"
-        android:title="@string/menu_feedback"/>
+        android:title="@string/menu_feedback" />
     <item
         android:id="@+id/about"
         android:showAsAction="never|withText"
-        android:title="@string/menu_about"/>
+        android:title="@string/menu_about" />
 
 </menu>
