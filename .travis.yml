@@ -5,8 +5,13 @@ jdk:
 
 android:
   components:
+    - extra-android-support
+    - extra-android-m2repository
+    - extra-google-m2repository
     - build-tools-22.0.1
     - android-22
+  licenses:
+    - '.+'
 
 script:
   - ./gradlew clean assemble check -Dpre-dex=false --stacktrace
