@@ -1,36 +1,42 @@
-RibbonMenu
-==========
+# New Ribbon Menu [Deprecated] 
 
-Navigation menu for Android (based on Google+ app).
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://travis-ci.org/jaredsburrows/RibbonMenu.svg?branch=master)](https://travis-ci.org/jaredsburrows/RibbonMenu)
+[![Twitter Follow](https://img.shields.io/twitter/follow/jaredsburrows.svg?style=social)](https://twitter.com/jaredsburrows)
 
-![RibbonMenu](https://github.com/darvds/RibbonMenu/raw/master/rbm1.png)
 
+Updated navigation menu for Android.
 
-Usage
+Original:
+
+![RibbonMenu](art/rbm1.png)
+
+New:
+
+![RibbonMenu](art/new1.png)
+![RibbonMenu](art/new2.png)
+
+Purpose
 =====
 
-Menus are created in xml as normal, adding text and an icon.
+- Ease of Access: Allow easy access to a menu that slides in and out
+- Ease of Implementation: Update the same screen using minimal amount of code
+- Customization: Easy to change colors and menus
 
-In the layout you want to show the menu, add a FrameLayout as the root layout and add the RibbonMenuView set with width and height to match_parent.
+New
+=====
 
-In your class you need to implement the iRibbonMenuCallback interface. This is called when you click a menu item and it passes the menu item id from the xml. You then make a reference to the RibbonMenuView and set the callback, set the menu items and add toggleMenu() to your android.R.id.home in your onOptionsItemSelected
+- Removed the 'library' project and condensed the project to one class
+- Changed the sliding animation to match Facebook and Google+ apps
+- Added standard ActionBar (you can chose to use ActionBarSherlock)
+ - Used menuitem to open the Menu
+- Added ability to update ListView on main Activity
+- Added 2 ListViews to the Menu, similiar to Facebook and Google+ apps
+- Added a AutoCompleteTextView and a Button as well to show examples of implemenation
+- Added ability to allow users to hit the 'back button' to hide the menu when it is open
+- Allows users to interact with background(main ListView) and the menu at the same time unlike the Facebook and Google+ apps
 
-The sample activity shows how it should all work.
+Future
+====
 
-
-License
-=======
-
-Copyright 2012 David Scott
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+- Swiping to open and close

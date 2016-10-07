@@ -1,0 +1,3 @@
+rootProject.name = 'RibbonMenu'
+
+include ':app'
