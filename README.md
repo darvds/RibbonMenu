@@ -1,4 +1,8 @@
-# New Ribbon Menu [![Build Status](https://travis-ci.org/jaredsburrows/RibbonMenu.png)](https://travis-ci.org/jaredsburrows/RibbonMenu)
+# New Ribbon Menu [Deprecated] 
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://travis-ci.org/jaredsburrows/RibbonMenu.svg?branch=master)](https://travis-ci.org/jaredsburrows/RibbonMenu)
+[![Twitter Follow](https://img.shields.io/twitter/follow/jaredsburrows.svg?style=social)](https://twitter.com/jaredsburrows)
 
 
 Updated navigation menu for Android.
